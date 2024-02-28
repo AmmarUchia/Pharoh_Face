@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FaceFolio</title>
+  <meta content="Phroh Face-Folio: Empowering Education through AI Facial Recognition. Seamlessly integrate cutting-edge technology into the educational experience. Recognize faces, enhance connections, and transform futures. AI-Powered Precision, User-Friendly Interface, Customizable Solutions. Join us for a transformative journey. Try our services today!" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='16.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='swiper-bundle.min.css') }}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+  <!-- PWA -->
+  <meta name="theme-color" content="#888374">
+  <link rel="manifest" href="/static/manifest.json">
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 id="logos">Phroh<span> _</span>Face-Folio<span>_</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/teacher">Login as Teacher</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#services">Service</a></li>
+          <li><a href="/#team">Team</a></li> 
+      </nav><!-- .navbar -->
+      <img class="mobile-nav-toggle mobile-nav-show " alt="" fetchpriority="low" src="static/minu.svg">
+      <img class="mobile-nav-toggle mobile-nav-hide d-none" alt="" fetchpriority="low" src="static/x.svg">
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row gy-5" >
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <h2>Welcome to <span>Phroh Face-Folio</span></h2>
+          <p>Empowering Education: Faces Recognized, Connections Enhanced, Futures Transformed.</p>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#try" class="btn-get-started">Try it</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="static/hero-img.svg" class="img-fluid" fetchpriority="low" id="gh" alt="" loading="lazy" >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  </section>
+  <!-- End Hero Section  -->
+  <main id="main">
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" >
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>Embark on a transformative journey with Pharoh Face-Folio</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <!-- <h3>Voluptatem dignissimos provident quasi corporis</h3> -->
+            <img src="static/about.jpg" class="img-fluid rounded-4 mb-4"  alt="">
+            <p>
+              At the heart of Pharoh Face-Folio, our commitment is to seamlessly integrate facial recognition technology powered by AI into the educational experience, creating a dynamic synergy between students and teachers. In an era heavily reliant on artificial intelligence, we harness its features to enhance the educational environment.
+            </p> 
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                where innovation and recognition converge to redefine the educational landscape through the power of artificial intelligence (AI).
+              </p>
+              <!-- <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul> -->
+
+              <div class="position-relative mt-4">
+                <img src="static/about-2.jpg" class="img-fluid rounded-4" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Us Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" >
+        <div class="clients-slider">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="static/client-1.png" fetchpriority="low" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/client-2.png" fetchpriority="low" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/client-3.png" fetchpriority="low" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="static/client-4.png" fetchpriority="low" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Clients Section -->
+    
+    <!-- ======= Try Service Section ======= -->
+    <section id="services" class="services sections-bg">
+      <div class="container" >
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+          <p>Empowering Futures, Delivering Excellence: Your Success, Our Commitment.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item  position-relative">
+              <div class="icon" style="max-width: 150% ;">
+                <img src="static/aim.png" fetchpriority="low" style="max-width: 150% ;"class="img-fluid"  alt="" style="z-index: 9;">
+              </div>
+              <h3>AI-Powered Precision</h3>
+              <p>Our facial recognition system, driven by AI, is meticulously designed to ensure unparalleled precision in identifying students. Gone are the days of manual checks—experience swift and accurate recognition, fostering a seamless connection in the communication loop.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <img src="static/ui.png" fetchpriority="low" style="max-width: 150% ;"class="img-fluid"  alt="" style="z-index: 9;">
+              </div>
+              <h3>User-Friendly Interface</h3>
+              <p>Our user-friendly interface is crafted to simplify the process, allowing teachers to effortlessly navigate and access the information they need, thereby enhancing efficiency in the educational process.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <img src="static/custom.png" fetchpriority="low" style="max-width: 150% ;"class="img-fluid"  alt="" style="z-index: 9;">
+              </div>
+              <h3>Customizable AI Solutions</h3>
+              <p>Recognizing that every school is unique, we offer customizable AI solutions tailored to fit the specific requirements of your institution. Our goal is to seamlessly integrate with your existing systems, ensuring a personalized and efficient experience driven by the power of AI.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+    </section>
+    <!-- ======= Call To Action Section ======= -->
+<section id="call-to-action" class="call-to-action">
+      <div class="section-header">
+      <h2 id="try">Try Service</h2>
+  <div class="container text-center" >
+    <div id="webcamContainer" style="display: inline-flex;"></div>
+    <div id="result"></div>
+    <button onclick="toggleWebcam()" class="cta-btn" style="background-color:#888374;"id="stbty">Start</button>
+    <button onclick="refreshPage()" class="cta-btn" style="background-color:#888374;">Recognize Again</button>
+    <canvas id="webcamCanvas" width="640" height="480" style="display: none;"class="d-none"></canvas>
+   <div id="recognizedName"></div>
+
+  </div>
+</section><!-- End Call To Action Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+
+          <!-- <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p> -->
+        </div>
+        <div class="row gy-4">
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="static/team-3.jpg"fetchpriority="low" class="img-fluid" alt="">
+              <span>Salma Hesham</span>
+              <p>Leader</p>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-xl-3 col-md-6 d-flex" >
+            <div class="member" id="developer">
+              <img src="static/team-1.jpg" fetchpriority="low" class="img-fluid"  alt="">
+              <span class="">Abdulrahman Khaled</span>
+              <p>Developer</p>
+            </div>
+          </div><!-- End Team Member -->
+            <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="static/team-4.jpg"fetchpriority="low" class="img-fluid" alt="">
+              <span>Sara Faisal</span>
+              <p>Content</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="static/team-2.jpg"fetchpriority="low" max-height="10px" class="img-fluid" alt="">
+              <span>Ammar Ehab</span>
+              <p>Developer</p>
+            </div>
+          </div><!-- End Team Member -->
+
+<!-- End Team Member -->
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="static/team-5.jpg"fetchpriority="low" class="img-fluid" alt="">
+              <span>Salma Tarek</span>
+              <p>Content</p>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-xl-3 col-md-6 d-flex">
+            <div class="member">
+              <img src="static/team-6.jpg" fetchpriority="low"class="img-fluid" alt="">
+              <span>Ali Ahmed</span>
+              <p>Designer</p>
+            </div>
+          </div><!-- End Team Member -->
+        </div>
+      </div>
+    </section><!-- End Our Team Section -->
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" >
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="content px-xl-5">
+              <h3>Frequently Asked <strong>Questions</strong></h3>
+              <p> </p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="accordion accordion-flush" id="faqlist">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <span class="num">1.</span>
+                    Is facial recognition technology accurate?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    The accuracy of facial recognition technology varies depending on a number of factors, including the quality of the images being used, the specific algorithms being employed, and the reference database being compared to. In general, however, modern facial recognition technology is highly accurate.
+                  </div>
+                </div>
+              </div>
+              <!-- # Faq item-->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <span class="num">2.</span>
+                    Can facial recognition technology be used to identify anyone?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Facial recognition technology can only be used to identify individuals who are included in the reference database being compared to. If an individual is not in the reference database, the technology will not be able to identify them.
+                  </div>
+                </div>
+              </div>
+              <!-- Faq item --> 
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <span class="num">3.</span>
+                    How does face recognition work?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Face recognition systems use algorithms to analyze facial features such as the distance between the eyes, nose shape, and jawline. These features are then compared to a database of known faces for identification.</div>
+                </div>
+              </div><!-- # Faq item-->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <span class="num">4.</span>
+                    What are the main applications of face recognition?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Face recognition is used in various applications, including security and surveillance, access control, authentication in smartphones, social media tagging, and law enforcement.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+  </main><!-- End #main -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-2">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="/" class="logo d-flex align-items-center">
+            <span>Phroh _Face-Folio_</span>
+            <br><br><br><br>
+          </a>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p> -->
+        </div>
+        <div class="text-center">
+        <div class="footer-links"id="ftr">
+          <br><br>
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About us</a></li>
+             <li><a href="#">Try Service</a></li>
+             <li><a href="/teacher">Login as Teacher</a></li>
+          </ul>
+        </div>
+      </div>
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Phroh _Face-Folio_</span></strong> All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#developer">Abdulrahman Khaled</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- <div id="preloader"></div> -->
+  <!-- Vendor JS Files -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+  <script src="static/aos.js"></script>
+  <script src="static/glightbox.min.js"></script>
+  <script src="static/purecounter_vanilla.js"></script>
+  <script src="static/swiper-bundle.min.js"></script>
+  <script src="static/isotope.pkgd.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="static/main.js"></script>
+<script src="static/socs.js"></script>
+<!-- PWA -->
+<script>
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/static/sw.js')
+          .then(function(registration) {
+              console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(function(error) {
+              console.error('Service Worker registration failed:', error);
+          });
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Phroh Face-Folio: Empowering Education through AI Facial Recognition. Seamlessly integrate cutting-edge technology into the educational experience. Recognize faces, enhance connections, and transform futures. AI-Powered Precision, User-Friendly Interface, Customizable Solutions. Join us for a transformative journey. Try our services today!" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='16.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='swiper-bundle.min.css') }}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename='main-t.css') }}" rel="stylesheet">
+    <!-- PWA -->
+    <meta name="theme-color" content="#888374">
+    <link rel="manifest" href="/static/manifest.json">
+  <title>FaceFolio</title>
+</head>
+
+
+
+<body dir="">
+
+    
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 id="logos">Phroh<span> _</span>Face-Folio<span>_</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Team</a></li> 
+          
+
+      </nav><!-- .navbar -->
+
+      <img class="mobile-nav-toggle mobile-nav-show " alt="" src="{{ url_for('static', filename='minu.svg') }}">
+      <img class="mobile-nav-toggle mobile-nav-hide d-none" alt="" src="{{ url_for('static', filename='x.svg') }}">
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+
+
+    <!-- ======= Call To Action Section ======= -->
+<section id="call-to-action" class="call-to-action">
+      <div class="section-header">
+      <h2 id="try">Hello, Teacher</h2>
+  <div class="container text-center">
+
+    <div id="webcamContainer"></div>
+    <div id="result"></div>
+    <button onclick="toggleWebcam()" class="cta-btn" id="stbty">Start</button>
+    <button onclick="refreshPage()" class="cta-btn" >Recognize Again</button>
+    
+    <canvas id="webcamCanvas" width="640" height="480" style="display: none; border: 2px solid red;"></canvas>
+   <div id="recognizedName"></div>
+
+
+  <button class="button-33" id="btn1" onclick="updateBonus();customAlert.alert('Bouns Added Successfully.')">Bonus</button>
+    <button class="button-332" id="btn2"  onclick="updateMinus();customAlert.alert('Minus Added Successfully.')">Minus</button>
+    <button onclick="updateAlert();customAlert.alert('Alert Added Successfully.')"class="alert-btn">Alert</button>
+
+       <br><br>
+       <input type="text"id="comment" class="inbyte" rows="4" cols="50" placeholder="Enter your comment">
+       <button type="button" class="comen" id="btn4"  onclick="addComment();customAlert.alert('Comment Added Successfully.')">Add Comment</button>
+    <br>
+    <br>
+    <div class="excel">
+<button class="excel-btn" onclick="fetchExcel()">Open Excel</button>
+<button class="c-excel-btn" onclick="closeExcel()">Close Excel</button>
+<button class="d-excel-btn" onclick="downloadOriginalExcel()">Download Excel</button>
+</div>
+<br> <br><br>
+<div id="excel-table"></div> <br> </div>
+</section><!-- End Call To Action Section -->
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="/" class=" align-items-center">
+            <span>Phroh _Face-Folio_</span>
+          </a>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p> -->
+          
+        </div>
+
+        <div class="col-lg-2 col footer-links text-center">
+          <h4>Useful Links</h4>
+          <ul>
+             <li><a href="/">Home</a></li>
+             <li><a href="/">About us</a></li>
+             <li><a href="/">Try Service</a></li>
+             <li><a href="/teacher">Login as Teacher</a></li>
+          </ul>
+        </div>
+
+      
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Phroh _Face-Folio_</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Designed by <a href="/#team">Abdulrahman Khaled</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+    <script src="{{ url_for('static', filename='xlsx.full.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+<script src="{{ url_for('static', filename='socs.js') }}"></script>
+<!-- PWA -->
+<script>
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/static/sw.js')
+          .then(function(registration) {
+              console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(function(error) {
+              console.error('Service Worker registration failed:', error);
+          });
+  }
+</script>
+</body>
+
+</html>
